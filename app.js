@@ -7,13 +7,14 @@ else {
         value -= 18;
 }
 
-value = "89" + value;
+value = "98" + value;
 
 var array = [];
 
 for(var i = 0; i < value.length; i++ ){
         array.push(value.charAt(i));
 };
+console.log(array);
 
 array.shift();
 array.pop();
@@ -21,7 +22,7 @@ array.pop();
 var reverseArray = "";
 
 for(var i = array.length; i > 0; i--){
-        reverseArray += array[i];
+        reverseArray += array[i-1];
 }
 
 value = parseInt(value);
